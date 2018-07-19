@@ -1,0 +1,21 @@
+{% load staticfiles%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+{% for i in ram %}
+<div>
+<img src="{% static 'images/sample-4.jpg' %}" alt="ram">
+</div><br>
+{% endfor %}
+</body>
+</html>
